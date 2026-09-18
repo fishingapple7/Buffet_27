@@ -6,7 +6,7 @@ import java.util.Scanner;
 class LectureInput{
     public static void main(String args[]) {
 
-Scanner sc = new Scanner(System.in); 
+Scanner sc = new Scanner (System.in); 
 
 double bacon = 13.98;
 double cheese = 10.84;
@@ -29,6 +29,11 @@ int sodaput = sc.nextInt();
 double itemtotal1 = baconput*bacon;
 double itemtotal2 = cheeseput*cheese;
 double itemtotal3 = sodaput*soda;
-System.out.println("Total is " + (itemtotal1 + itemtotal2 + itemtotal3));
+double grandtotal = itemtotal1 + itemtotal2 + itemtotal3;
+System.out.println("Total is " + grandtotal);
+System.out.println("How much would you like to tip?");
+double tipput = sc.nextDouble();
+tipput = (tipput/100)*grandtotal;
+System.out.println("Tip and Total is " + grandtotal + tipput);
 	}
 }
