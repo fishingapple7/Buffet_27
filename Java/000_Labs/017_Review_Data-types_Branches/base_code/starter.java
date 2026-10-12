@@ -29,37 +29,52 @@ class starter {
 			
 			System.out.println("Strength (1-10): ");
 			int str = sc.nextInt();
-			if ((str>10) || (str<1)){
+			left = left-str;
+			if ((str>10) || (str<1) || (left<0)){
+				left = left + str;
 				System.out.print("Please input a smaller value. Strength (1-10): ");
 				str = sc.nextInt();
+				left = left - str;
 			}
-			System.out.println("You have " + (left-str) + " points left.");
+			System.out.println("You have " + left + " points left.");
 			System.out.println("Dexterity (1-10): ");
 			int dex = sc.nextInt();
-			if ((dex>10) || (dex<1)){
+			left = left-dex;
+			if ((dex>10) || (dex<1) || (left<0)){
 				System.out.print("Please input a smaller value. Dexterity (1-10): ");
+				left = left + dex;
 				dex = sc.nextInt();
+				left = left - dex;
 			}
-			System.out.println("You have " + (left-str-dex) + " left.");
+			System.out.println("You have " + (left) + " left.");
 			System.out.println("Intelligence (1-10): ");
 			int inte = sc.nextInt();
-			if ((inte>10) || (inte<1)){
+			left = left-inte;
+			if ((inte>10) || (inte<1) || (left<0)){
 				System.out.print("Please input a smaller value. Intelligence (1-10): ");
+				left = left + inte;
 				inte = sc.nextInt();
+				left = left - inte;
 			}
-			System.out.println("You have " + (left-str-dex-inte) + " left.");
+			System.out.println("You have " + (left) + " left.");
 			System.out.println("Constitution (1-10): ");
 			int con = sc.nextInt();
-			if ((con>10) || (con<1)){
+			left = left-con;
+			if ((con>10) || (con<1) || (left<0)){
 				System.out.print("Please input a smaller value. Constitution (1-10): ");
+				left = left + con;
 				con = sc.nextInt();
+				left = left - con;
 			}
-			System.out.println("You have " + (left-str-dex-inte-con) + " left.");
+			System.out.println("You have " + (left) + " left.");
 			System.out.println("Charisma (1-10): ");
 			int cha = sc.nextInt();
-			if ((cha>10) || (cha<1)){
+			left = left-cha;
+			if ((cha>10) || (cha<1) || (left<0)){
 				System.out.print("Please input a smaller value. Charisma (1-10): ");
+				left = left + cha;
 				cha = sc.nextInt();
+				left = left - cha;
 			}
 			System.out.println("You are " + name + ", the " + title + " of CVHS.");
 			System.out.println("You're a " + dontbeaspellcaster + " with the following stats!");
@@ -78,37 +93,52 @@ class starter {
 			
 			System.out.println("Strength (1-10): ");
 			int str = sc.nextInt();
-			if ((str>10) || (str<1)){
+			left = left-str;
+			if ((str>10) || (str<1) || (left<0)){
 				System.out.print("Please input a smaller value. Strength (1-10): ");
+				left = left+str;
 				 str = sc.nextInt();
+				 left = left-str;
 			}
-			System.out.println("You have " + (left-str) + " points left.");
+			System.out.println("You have " + (left) + " points left.");
 			System.out.println("Dexterity (1-10): ");
 			int dex = sc.nextInt();
-			if ((dex>10) || (dex<1)){
+			left = left-str-dex;
+			if ((dex>10) || (dex<1) || (left<0)){
 				System.out.print("Please input a smaller value. Dexterity (1-10): ");
+				left = left+dex;
 				dex = sc.nextInt();
+				left = left-dex;
 			}
-			System.out.println("You have " + (left-str-dex) + " left.");
+			System.out.println("You have " + (left) + " left.");
 			System.out.println("Intelligence (1-10): ");
 			int inte = sc.nextInt();
-			if ((inte>10) || (inte<1)){
+			left = left-str-dex-inte;
+			if ((inte>10) || (inte<1) || (left<0)){
 				System.out.print("Please input a smaller value. Intelligence (1-10): ");
+				left = left+inte;
 				inte = sc.nextInt();
+				left = left-inte;
 			}
-			System.out.println("You have " + (left-str-dex-inte) + " left.");
+			System.out.println("You have " + (left) + " left.");
 			System.out.println("Constitution (1-10): ");
 			int con = sc.nextInt();
-			if ((con>10) || (con<1)){
+			left = left-str-dex-inte-con;
+			if ((con>10) || (con<1) || (left<0)){
 				System.out.print("Please input a smaller value. Constitution (1-10): ");
+				left = left+con;
 				con = sc.nextInt();
+				left = left-con;
 			}
-			System.out.println("You have " + (left-str-dex-inte-con) + " left.");
+			System.out.println("You have " + (left) + " left.");
 			System.out.println("Charisma (1-10): ");
 			int cha = sc.nextInt();
-			if ((cha>10) || (cha<1)){
+			left = left-str-dex-inte-con-cha;
+			if ((cha>10) || (cha<1) || (left<0)){
 				System.out.print("Please input a smaller value. Charisma (1-10): ");
+				left = left+cha;
 				cha = sc.nextInt();
+				left = left-cha;
 			}
 			System.out.println("You are " + name + ", the " + title + " of CVHS.");
 			System.out.println("You're a " + dontbeaspellcaster + " with the following stats!");
@@ -127,37 +157,52 @@ class starter {
 			
 			System.out.println("Strength (1-10): ");
 			int str = sc.nextInt();
-			if ((str>10) || (str<1)){
+			left = left-str;
+			if ((str>10) || (str<1) || (left<0)){
 				System.out.print("Please input a smaller value. Strength (1-10): ");
+				left = left+str;
 				str = sc.nextInt();
+				left = left-str;
 			}
 			System.out.println("You have " + (left-str) + " points left.");
 			System.out.println("Dexterity (1-10): ");
 			int dex = sc.nextInt();
-			if ((dex>10) || (dex<1)){
+			left = left-str-dex;
+			if ((dex>10) || (dex<1) || (left<0)){
 				System.out.print("Please input a smaller value. Dexterity (1-10): ");
+				left = left+dex;
 				dex = sc.nextInt();
+				left = left-dex;
 			}
-			System.out.println("You have " + (left-str-dex) + " left.");
+			System.out.println("You have " + (left) + " left.");
 			System.out.println("Intelligence (1-10): ");
 			int inte = sc.nextInt();
-			if ((inte>10) || (inte<1)){
+			left = left-str-dex-inte;
+			if ((inte>10) || (inte<1) || (left<0)){
 				System.out.print("Please input a smaller value. Intelligence (1-10): ");
+				left = left+inte;
 				inte = sc.nextInt();
+				left = left-inte;
 			}
-			System.out.println("You have " + (left-str-dex-inte) + " left.");
+			System.out.println("You have " + (left) + " left.");
 			System.out.println("Constitution (1-10): ");
 			int con = sc.nextInt();
-			if ((con>10) || (con<1)){
+			left = left-str-dex-inte-con;
+			if ((con>10) || (con<1) || (left<0)){
 				System.out.print("Please input a smaller value. Constitution (1-10): ");
+				left = left+con;
 				con = sc.nextInt();
+				left = left-con;
 			}
-			System.out.println("You have " + (left-str-dex-inte-con) + " left.");
+			System.out.println("You have " + (left) + " left.");
 			System.out.println("Charisma (1-10): ");
 			int cha = sc.nextInt();
-			if ((cha>10) || (cha<1)){
+			left = left-str-dex-inte-con-cha;
+			if ((cha>10) || (cha<1) || (left<0)){
 				System.out.print("Please input a smaller value. Charisma (1-10): ");
+				left = left+cha;
 				cha = sc.nextInt();
+				left = left-cha;
 			}
 			System.out.println("You are " + name + ", the " + title + " of CVHS.");
 			System.out.println("You're a " + dontbeaspellcaster + " with the following stats!");
