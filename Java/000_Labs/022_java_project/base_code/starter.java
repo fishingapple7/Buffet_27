@@ -10,7 +10,7 @@ class starter {
 
 	public static void main(String args[]) {
 		
-
+		
 		int money = 100;
 		int numb1 = 0;
 		int numb2 = 0;
